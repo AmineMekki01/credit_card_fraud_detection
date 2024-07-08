@@ -1,0 +1,28 @@
+data_processing_params:
+  threshold: 0.3
+  transaction_data_path : './artifacts/data/raw/train/train_transaction.csv'
+  identity_data_path : './artifacts/data/raw/train/train_identity.csv'
+  features_path: './artifacts/features/column_features.json'
+  column_features_file_path: './artifacts/features/column_features.json'
+  
+model_params:
+  n_estimators: 2000
+  max_depth: 12
+  learning_rate: 0.02
+  subsample: 0.8
+  col_sample_by_tree: 0.4
+  missing: -1
+  eval_metric: "auc"
+  tree_method: "hist"
+  device: "cuda"
+  enable_categorical: True
+  early_stopping_rounds: 50
+
+
+training_params:
+  trained_model_directory_path : "./artifacts/models/"
+  model_name: 'xgboost'
+
+inference_params:
+  trained_model_directory_path: "/media/WORK/Projects/credit_card_fraud_detection/artifacts/models/"
+  model_name: 'xgboost'
