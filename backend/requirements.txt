@@ -1,0 +1,16 @@
+pandas
+matplotlib
+numpy
+seaborn
+scipy
+scikit-learn
+pyyaml
+python-box
+ensure
+xgboost
+uvicorn
+fastapi
+imbalanced-learn
+cassandra-driver
+kafka-python
+requests
